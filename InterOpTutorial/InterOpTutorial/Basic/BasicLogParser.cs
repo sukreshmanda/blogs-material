@@ -1,4 +1,4 @@
-namespace InterOpTutorial;
+namespace InterOpTutorial.Basic;
 
 public class LogEntry
 {
@@ -8,7 +8,7 @@ public class LogEntry
 
 public class NaiveParser
 {
-    public LogEntry ParseLog(string logLine)
+    private LogEntry ParseLog(string logLine)
     {
         // String allocations everywhere
         var parts = logLine.Split(' ', 2);

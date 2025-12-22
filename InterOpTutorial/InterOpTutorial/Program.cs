@@ -7,4 +7,4 @@ using InterOpTutorial.Native;
 
 BenchmarkRunner.Run<BasicBenchmarks>();
 BenchmarkRunner.Run<ImprovedBenchmark>();
-BenchmarkRunner.Run<NativeBenchmark>();
+// BenchmarkRunner.Run<NativeBenchmark>();

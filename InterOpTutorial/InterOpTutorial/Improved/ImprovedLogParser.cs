@@ -1,4 +1,4 @@
-namespace InterOpTutorial;
+namespace InterOpTutorial.Improved;
 
 public ref struct LogEntryRef
 {
@@ -8,7 +8,7 @@ public ref struct LogEntryRef
 
 public class ImprovedParser
 {
-    public LogEntryRef ParseLog(ReadOnlySpan<char> logLine)
+    private LogEntryRef ParseLog(ReadOnlySpan<char> logLine)
     {
         int spaceIndex = logLine.IndexOf(' ');
         
