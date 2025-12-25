@@ -8,7 +8,9 @@
     </PropertyGroup>
     
     <ItemGroup>
-        <None Include="testfile.bin" CopyToOutputDirectory="PreserveNewest"/>
+        <None Include="testfile_100mb.bin" CopyToOutputDirectory="PreserveNewest" />
+        <None Include="testfile_200mb.bin" CopyToOutputDirectory="PreserveNewest" />
+        <None Include="testfile_500mb.bin" CopyToOutputDirectory="PreserveNewest" />
     </ItemGroup>
     
     <ItemGroup>

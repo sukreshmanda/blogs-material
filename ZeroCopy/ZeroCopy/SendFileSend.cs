@@ -16,10 +16,8 @@ public class SendFileSend
     private static extern long sendfile_linux(
         int out_fd, int in_fd, IntPtr offset, long count);
 
-    public void SendFile()
+    public void SendFile(String filePath)
     {
-        var filePath = "testfile.bin";
-        
         using var client = new TcpClient("localhost", 9876);
         var socket = client.Client;
         var socketFd = (int)socket.Handle;

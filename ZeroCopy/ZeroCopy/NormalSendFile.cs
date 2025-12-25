@@ -5,9 +5,8 @@ namespace ZeroCopy;
 
 public class NormalSendFile
 {
-    public async Task SendFile()
+    public async Task SendFile(String filePath)
     {
-        var filePath = "testfile.bin";
         
         using var client = new TcpClient("localhost", 9876);
         await using var stream = client.GetStream();
